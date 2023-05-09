@@ -459,7 +459,7 @@ nav.active .menuToggle::before {
 }
 
 nav.active .menuToggle::after {
-    transform: translateY(0px) rotate(-135deg);
+    transform: translateY(0px) rotate(225deg);
 }
 
 .nav-resp {
