@@ -453,6 +453,8 @@ footer p {
     transition: 0.5s;
 }
 
+/* -45 and -135 is best combination here */
+
 nav.active .menuToggle::before {
     transform: translateY(0px) rotate(-45deg);
     box-shadow: 0 0 rgb(213, 33, 58);
