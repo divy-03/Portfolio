@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/84db2726b2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="JS/index.js">
+    <link rel="stylesheet" href="CSS/slider.css">
     <title>Portfolio</title>
 </head>
 
@@ -27,7 +28,7 @@
             </div>
         </div>
         <div class="nav-cent">
-        
+
         </div>
         <div class="nav-right flexbox">
             <div class="nav-menu">
@@ -94,6 +95,57 @@
             </div>
         </div>
     </sec>
+
+    <section sec-slider>
+        <div class="slider">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img">
+                        <img src="Images/Slider/G-desk.jpg" alt="gaming">
+                        <h2>Gaming Desk</h2>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="Images/Slider/O-desk.jpg" alt="gaming">
+                        <h2>Office Desk</h2>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="Images/Slider/P-desk.jpg" alt="gaming">
+                        <h2>Producer Desk</h2>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="Images/Slider/G-desk.jpg" alt="gaming">
+                        <h2>Gaming Desk</h2>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="Images/Slider/O-desk.jpg" alt="gaming">
+                        <h2>Office Desk</h2>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="Images/Slider/P-desk.jpg" alt="gaming">
+                        <h2>Producer Desk</h2>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </section>
 
     <sec class="sec-cont">
         <div id="contact" class="div-cont flexbox">
@@ -163,15 +215,8 @@
     <footer class="flexbox">
         <p>©2023 Copyright - Portfolio</p>
     </footer>
-
-    <script>
-        // Javascript for working of Hamburger toggle
-        let menuToggle = document.querySelector('.menuToggle');
-        let nav = document.querySelector('nav');
-        menuToggle.onclick = function () {
-            nav.classList.toggle('active');
-        }
-    </script>
+    <script src="slider.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>
