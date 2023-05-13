@@ -1,22 +1,101 @@
-.card h2, span{
+.card h2,
+span {
     color: black;
     display: flex;
 }
 
-.slider {
+/* .div-slider {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 42vh;
+} */
+
+.slider {
+    /* max-width: 1100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 42vh; */
     /* background-color: aquamarine; */
+    /* position: relative; */
+    width: 100%;
+    margin: 0 35px;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.slider i {
+    background: white;
+    color: black;
+    box-shadow: 1px 1px 10px 0px rgb(68, 68, 68);
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    /* position: absolute; */
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    /* top: 50%; */
 }
 
 .carousel {
-    display: flex;
-    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.slider i:first-child {
+    left: -22px;
+    transform: translateY(-50%);
+}
+
+.slider i:last-child {
+    right: -22px;
+    transform: translateY(-50%);
 }
 
 .img img {
     height: 110px;
     width: 180px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.card { 
+    background: linear-gradient(315deg, rgb(175, 0, 214), rgb(0, 255, 255));
+    border-radius: 10px;
+    /* box-shadow: 1px 1px 20px 0px black; */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    scroll-snap-align: start;
+}
+
+.card h2 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 30px 0 5px;
+    color: rgb(216, 216, 216);
+    text-shadow: 2px 0 4px black;
+    /* color: black; */
+}
+
+.card span {
+    text-shadow: 2px 0 6px white;
 }
