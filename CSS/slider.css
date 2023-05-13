@@ -1,0 +1,22 @@
+.card h2, span{
+    color: black;
+    display: flex;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42vh;
+    /* background-color: aquamarine; */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.img img {
+    height: 110px;
+    width: 180px;
+}
