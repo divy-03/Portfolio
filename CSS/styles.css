@@ -113,7 +113,7 @@
     font-size: var(--font-medium);
 }
 
-.nav-right { 
+.nav-right {
     width: 40vw;
     padding-left: 30vw;
 }
@@ -136,7 +136,7 @@
     width: 65vw;
     /* height: calc(100vh-82px); */
     height: 90vh;
-    background-image: linear-gradient(to left top, rgb(12,115,127), rgb(74,54,128));
+    background-image: linear-gradient(to left top, rgb(12, 115, 127), rgb(74, 54, 128));
 }
 
 .bg-rt {
@@ -147,7 +147,7 @@
 }
 
 .sec-cont {
-    height: 70vh;
+    /* height: 70vh; */
     width: 45Svw;
     position: absolute;
     /* background-color: var(--darkBlue); */
@@ -160,7 +160,7 @@
 }
 
 .sec-cont1 {
-    height: 50vh;
+    /* height: 50vh; */
     position: absolute;
     top: 20vh;
     width: 100vw;
@@ -239,7 +239,9 @@
     margin: 0 10px;
 }
 
-.name input, .email input , .submit input{
+.name input,
+.email input,
+.submit input {
     width: 42%;
     background: none;
     outline: none;
@@ -275,6 +277,10 @@
         top: 15vh;
         height: 60vh;
     }
+
+    .sec-cont {
+        height: unset;
+    }
 }
 
 @media screen and (max-width: 882px) {
@@ -283,34 +289,69 @@
         height: 90vh;
         /* background-image: linear-gradient(to bottom, rgb(25, 20, 42) 60%, rgb(36, 31, 62)); */
     }
+    
+    .sec-cont {
+        height: unset;
+    } 
 }
 
 @media screen and (max-width: 750px) {
-    .bg-lt, .bg-rt {
+
+    .bg-lt,
+    .bg-rt {
         display: none;
     }
-    .sec-cont1 {
-        /* justify-content: center;
-        align-items: start; */
-        height: 70vh;
-        position: static;   
+
+    .cont-info h1, .cont-det, .cont-info p {
+        margin-right: 0;
+    }
+
+    .left-cont {
+        width: 40vw;
     }
 
     .sec-cont {
-        top: 70vh;
-        border-radius: 0;
-        left: 0;
-        width: 100vw;
-        position: static;
+        /* top: 70vh; */
+        /* border-radius: 0; */
+        left: unset;
+        right: 0vh;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        /* width: 100vw; */
+        /* position: static; */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    .cont-info h1, .cont-det, .cont-info p {
+        margin-right: 20px;
     }
 
     .left-cont {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 700px) {
+    .sec-cont1 {
+        height: 90vh;
+    }
+
     .sec-bg {
         flex-direction: column;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .sec-cont {
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .sec-cont1,
+    .sec-cont {
+        height: unset;
+        position: static;
     }
 }
