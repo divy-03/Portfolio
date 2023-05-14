@@ -132,14 +132,14 @@
 }
 
 .bg-lt {
-    width: 35vw;
+    width: 65vw;
     /* height: calc(100vh-82px); */
     height: 90vh;
     background-image: linear-gradient(to left top, rgb(12,115,127), rgb(74,54,128));
 }
 
 .bg-rt {
-    width: 65vw;
+    width: 35vw;
     height: 90vh;
     /* height: calc(100vh-82px); */
     background-image: linear-gradient(to left top, teal, purple);
@@ -164,7 +164,7 @@
     top: 20vh;
     width: 100vw;
     z-index: 9;
-    background-image: linear-gradient(to top right, rgb(0, 255, 255), rgb(255, 0, 255));
+    background-image: linear-gradient(to top right, rgb(0, 202, 202), rgb(212, 0, 212));
     /* background-image: linear-gradient(to right, rgb(25, 20, 42), rgb(36, 31, 62));   */
 }
 
@@ -230,6 +230,7 @@
 .form-head h1 {
     font-size: var(--font-large);
     font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
 }
 
 .form-items {
