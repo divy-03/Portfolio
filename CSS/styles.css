@@ -100,6 +100,7 @@
     background-image: linear-gradient(to bottom, rgb(25, 20, 42) 60%, rgb(36, 31, 62));
     height: 10vh;
     font-size: var(--font-medium);
+    z-index: 20;
 }
 
 .nav-left {
@@ -146,22 +147,39 @@
 
 .sec-cont {
     height: 70vh;
-    width: 70vw;
+    width: 45Svw;
     position: absolute;
     /* background-color: var(--darkBlue); */
+    background-image: linear-gradient(to top right, rgb(0, 255, 255), rgb(255, 0, 255));
     background-image: linear-gradient(to right, rgb(25, 20, 42), rgb(36, 31, 62));
     top: 10vh;
-    left: 25vw;
+    left: 45vw;
+    z-index: 10;
+    border-radius: 20px;
+}
+
+.sec-cont1 {
+    height: 50vh;
+    position: absolute;
+    top: 20vh;
+    width: 100vw;
+    z-index: 9;
+    background-image: linear-gradient(to top right, rgb(0, 255, 255), rgb(255, 0, 255));
+    /* background-image: linear-gradient(to right, rgb(25, 20, 42), rgb(36, 31, 62));   */
 }
 
 .left-cont {
     width: 40%;
-    height: 70vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* height: 70vh;    */
 }
 
-.right-cont {
+/* .right-cont {
     width: 60%;
-}
+} */
 
 .cont-info {
     /* width: 80%; */
@@ -172,7 +190,7 @@
 }
 
 .cont-info h1 {
-    margin: 20px 60px;
+    margin: 0px 60px;
     font-size: var(--font-large);
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -248,3 +266,4 @@
     cursor: pointer;
     transform: translateY(-3px);
 }
+
