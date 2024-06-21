@@ -9,7 +9,7 @@
 
     100% {
         transform: translateX(0px);
-        opacity: 1;
+        opacity: 1;     
         filter: blur(0);
     }
 }
@@ -200,7 +200,7 @@
 }
 
 .snap {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
